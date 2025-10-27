@@ -1,0 +1,7 @@
+Performance comparison
+ArrayList are more efficient in the Random Access since they are indexed,
+however the likednList are not so in ordeer to get a random element, we need to traverse eleemnt by element
+the worst case requires O(N) operations if the element we are searching for is in the back while the best case is O(1) if the element we are searching for is in the front
+
+Sequential insertions and deletions in ArrayList needs each time to shift the elements, as we saw in the lecture this requires mathematical operations done by the JVM each time, how ever in the LinkedList , it's more simple it is done just by changing the reference of the next address to the new element ( insertions) and the next address of this new element to the previous element of the first one before insertion
+Random insert
