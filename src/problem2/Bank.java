@@ -52,7 +52,7 @@ public class Bank {
             double total = 0.0;
             for (Double t : c.getTransactions()) {
                 System.out.println("  " + t);
-                total += t; // unboxing Double → double
+                total += t;
             }
             System.out.println("Total balance: " + total + "\n");
         }

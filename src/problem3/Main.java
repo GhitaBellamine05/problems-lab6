@@ -30,7 +30,12 @@ public class Main {
                 case 1:
                     System.out.print("Enter title: ");
                     String title = sc.nextLine();
-                    lib.add(new Magazine(title, "October", 2025));
+                    System.out.print("Enter month: ");
+                    String month = sc.nextLine();
+                    System.out.print("Enter year: ");
+                    int year = Integer.parseInt(sc.nextLine());
+
+                    lib.add(new Magazine(title, month, year));
                     break;
 
                 case 2:

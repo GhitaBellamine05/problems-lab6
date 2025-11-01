@@ -22,10 +22,11 @@ public class ListPerformanceComparison {
         for (int i = 0; i < SIZE; i++) {
             int randomValue = (int) (Math.random() * 1000);
             // initializing the 2 lists with teh same random values
-            // in order to get accurate results
             arrayList.add(randomValue);
             linkedList.add(randomValue);
         }
+//        System.out.println(arrayList);
+//        System.out.println(linkedList);
 
 
     //  Random insertions and deletions
@@ -83,7 +84,7 @@ public class ListPerformanceComparison {
             // Sequential insertions and deletions for the ArrayList
             for (int i = 0; i < OPERATIONS; i++) {
                 list.add(0, i);          // beginning
-                list.add(i);             // end
+                list.add(i);               // end
             }
             for (int i = 0; i < OPERATIONS; i++) {
                 list.remove(0);          // beginning

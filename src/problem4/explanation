@@ -1,7 +1,14 @@
 Performance comparison
-ArrayList are more efficient in the Random Access since they are indexed,
-however the likednList are not so in ordeer to get a random element, we need to traverse eleemnt by element
-the worst case requires O(N) operations if the element we are searching for is in the back while the best case is O(1) if the element we are searching for is in the front
+=========================== RANDOM ACCESS ===============================================
+ArrayList are more efficient in the Random Access since it is indexed (O(1))
+however the Linked list is not indexed ,so in order to get a random element, you must traverse the list element by element
+the worst case requires O(n) operations if the element we are searching for is near the end, while the best case is O(1) if it is in the front
 
-Sequential insertions and deletions in ArrayList needs each time to shift the elements, as we saw in the lecture this requires mathematical operations done by the JVM each time, how ever in the LinkedList , it's more simple it is done just by changing the reference of the next address to the new element ( insertions) and the next address of this new element to the previous element of the first one before insertion
-Random insert
+=========================== SEQUENTIAL INSERTION AND DELETION =====================
+Sequential insertions and deletions in ArrayList require shifting all the subsequent elements each time, as we saw in the lecture this requires mathematical operations done by the JVM each time,
+However in the LinkedList , it's more simple it is done just by updating the references ( the next and the previous pointers between the nodes )  without shifting elements in memory
+
+============================ RANDOM  INSERTION AND DELETEION ===========================
+For random insertions and deletions, ArrayList is generally faster than LinkedList in java
+in ArrayList, elements after the insertion/deletion point need to be shifted. it still benefits from the direct indexing which allows it to quickly reach the position
+in LinkedList, to perform a random insertion or deletion, the list must first be traversed from the head to find the desired insertion/ deletiom point. This traversal takes o(n) time, where n is the number of elements.
