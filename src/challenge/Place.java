@@ -15,7 +15,10 @@ public class Place {
     // setters
     public void setTown(String name){this.town = name;}
     public void setDistance(int distance){this.distance = distance;}
-
+    @Override
+    public String toString(){
+        return town +", " + distance;
+    }
 
 
 }

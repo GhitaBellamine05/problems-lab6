@@ -146,7 +146,7 @@ public class Itinerary {
 
                 case 'Q':
                     quit = true;
-                    System.out.println("Exiting itinerary. Safe travels!");
+                    System.out.println("Exiting itinerary");
                     break;
 
                 default:
